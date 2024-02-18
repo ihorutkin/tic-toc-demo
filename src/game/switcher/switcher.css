@@ -1,0 +1,88 @@
+.switch-container .container{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    top: 10px;
+    right: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.switcher{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switcher input{
+    display: none;
+}
+
+.check{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ccc;
+    border-radius: 34px;
+    transition: .5s;
+}
+
+.check::before{
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    left: 4px;
+    bottom: 4px;
+    background: #fff;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+input:checked + .check{
+    background: #0a2435;
+}
+
+input:checked + .check::before{
+    transform: translateX(26px);
+}
+
+.dark-mode{
+    background: #f7f0e9;
+}
+
+.dark-mode h1{
+    color: #f7f0e9;
+}
+
+.dark-mode .status_text{
+    color: #0b0a14;
+}
+
+.dark-mode .move_list::marker{
+    color: #0b0a14;
+}
+
+.dark-mode .move_btn{
+    color: #0b0a14;
+}
+
+.dark-mode .reset_btn{
+    background: #0a2435;
+    color: #f7f0e9;
+}
+
+.dark-mode .reset_btn:hover{
+    border: 1px solid #0a2435;
+    background: #f7f0e9;
+    color: #0a2435;
+}

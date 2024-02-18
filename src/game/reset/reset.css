@@ -1,0 +1,26 @@
+.reset .btn-container{
+    position: relative;
+}
+
+
+.reset_btn{
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background: #f7f0e9;
+    color: #0a2435;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.reset_btn:hover{
+    border: 1px solid #f7f0e9;
+    background: #0a2435;
+    color: #f7f0e9;
+    transition: all .3s;
+}
